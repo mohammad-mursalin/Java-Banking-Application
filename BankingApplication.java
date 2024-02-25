@@ -51,6 +51,7 @@ public class BankingApplication {
 
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("\n");
         System.out.println("Welcome " +customerName);
         System.out.println("Your ID is " +customerId);
         System.out.println("\n");
@@ -62,7 +63,7 @@ public class BankingApplication {
 
         do {
             System.out.println("================================");
-            System.out.println("Enter an option : ");
+            System.out.print("Enter an option : ");
             option = scanner.nextInt();
             System.out.println("================================");
             System.out.println("\n");
@@ -78,7 +79,7 @@ public class BankingApplication {
 
                 case 2 :
                     System.out.println("--------------------------------------------");
-                    System.out.println("Enter an amount to deposite : ");
+                    System.out.print("Enter an amount to deposite : ");
                     int depositeAmount = scanner.nextInt();
                     deposite(depositeAmount);
                     System.out.println("--------------------------------------------");
@@ -87,7 +88,7 @@ public class BankingApplication {
 
                 case 3 :
                     System.out.println("--------------------------------------------");
-                    System.out.println("Enter an amount to withdraw : ");
+                    System.out.print("Enter an amount to withdraw : ");
                     int withdrawAmount = scanner.nextInt();
                     withdraw(withdrawAmount);
                     System.out.println("--------------------------------------------");
