@@ -4,10 +4,10 @@ public class BankingApplication {
 
     int balance;
     int previousTransaction;
-    char customerName;
+    String customerName;
     int customerId;
 
-    BankingApplication ( char customerName , int customerId ) {
+    BankingApplication ( String customerName , int customerId ) {
 
         this.customerName = customerName;
         this.customerId = customerId;
